@@ -14,7 +14,7 @@ function Posts() {
     const { authState, setAuthState } = useContext(Context);
     const [open, setOpen] = useState(false);
     const [message, setMessage] = useState('');
-    const REST_API_CALL = 'https://my-app.davidz.workers.dev'
+    const REST_API_CALL = 'https://my-app.davidz.workers.dev/posts'
     const [divArray, setDiv] = useState([]);
     const [refresh, setRefresh] = useState(false)
     useEffect(() => {

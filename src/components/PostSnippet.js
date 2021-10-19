@@ -12,7 +12,7 @@ import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 function PostSnip(props) {
     const history = useHistory();
     const { authState, setAuthState } = useContext(Context);
-    const REST_API_CALL = 'https://my-app.davidz.workers.dev'
+    const REST_API_CALL = 'https://my-app.davidz.workers.dev/posts'
     var [date, setDate] = useState(Date().toString());
     useEffect(() => {
         const timer = setTimeout(() => setDate(Date().toString()), 1e3)
